@@ -1,0 +1,355 @@
+body{ max-width: 970PX; box-sizing: border-box; margin: 0 auto;}
+
+/* contact us page */
+.contact-body .contact-banner{background-color: #dddddd;}
+.contact-body .contact-heading{margin: 0;padding: 80px;}
+.contact-body .contact-main {display: flex;justify-content: space-between;}
+.contact-body .contact-form { width: 70%;padding: 65px 80px 130px 100px;}
+.contact-body .contact-add {width: 30%;padding: 65px 75px 0px 15px;}
+.contact-body .contact-add>ul>li{list-style: none; padding-right: 7px;margin-bottom: 15px;}
+.contact-body .contact-add>ul{padding: 0;}
+.contact-body .form-inner {display: flex;flex-direction: column;}
+.contact-body .form-inner>input, .form-inner>textarea{margin-bottom: 10px;     background: #F7F7F7;   border: 1px solid #B3B3B3;    padding: 5px;}
+.contact-body .contact-icon{vertical-align: top;  color: #333333; margin: 0px;margin-right: 7px;}
+.contact-body .contact-detail { display: inline-block;color: #A5A5A5; margin: 0;}
+.contact-body .contactform-text{color: #B2B2B2;}
+.contact-body .contact-btn {text-align: end;}
+.contact-body .contactform-btn  { background: #009E0F; color: #fff; padding: 7px; border-radius: 4px; border: 1px solid #000000a3;}
+
+/* Footer */
+.footer-links,.footer2-section{display: flex;justify-content: space-between;padding: 15px}
+.footer-link2>ul>li,.footer-link3>ul>li {list-style: none; padding-bottom: 5px;}
+.footer-link2>ul>li>a,.footer-link3>ul>li>a {text-decoration: none; color: #b5b5b5; }
+.footer-link1>a{ color: #b5b5b5;  margin-top: 5px;}
+.footer-links{background: #eeeeee;}
+.footer2-section{background: #333333;}
+.footer-icon{    color: #333333; margin: 5px;}
+.footer2-left,.footer2-right{color: rgb(135 135 135);margin: 0;}
+.subscribe-btn{ background-color: #b5b5b5;border: none;color: white;padding: 10px 25px;text-align: center; text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer; }
+.footer-link1>h1,.footer-link4>h1{margin: 0;margin-bottom: 10px !important;}
+.footer-brands>ul>li>img {  height: 26px;  width: 42px;}
+.footer-brands>ul>li{list-style: none; padding-right: 7px;}
+.footer-brands>ul{display: flex; align-items: center; padding: 0;}
+
+/* ----- navigation -------- */
+.nav { height: 50px;width: 100%;background-color: #EEEEEE;position: relative;}
+.nav > .nav-header { display: inline;}
+.nav > .nav-header > .nav-title {display: inline-block; font-size: 22px; color: #000; padding: 13px 10px 10px 10px;}
+.nav > .nav-btn { display: none;}
+.nav > .nav-links { display: inline; float: right; font-size: 18px;}
+.nav > .nav-links > a {display: inline-block;padding: 13px 10px 13px 10px;text-decoration: none;   color: #000;}
+.nav > .nav-links > a:hover { background-color: rgba(0, 0, 0, 0.3);}
+.nav > #nav-check { display: none;}
+.navbar-btn {border: 1px solid #CBCAC7;background: #2B78E4; border-radius: 5px; padding: 5px 10px;color: #fff;}
+.navbar-btn>i{margin-right: 5px;}
+.navbar-btn:hover{cursor: pointer;}
+/* ----- navigation close -------- */
+
+
+/* support page */
+.support-select1{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;    
+    padding: 20px;
+    background-image: url(../images/downarrow.png);   /* Add custom arrow */
+}
+
+
+/* signin page */
+.signin-form{display: flex; justify-content: center;    padding: 100px 70px 70px 70px;}
+.signin-btndiv,.signin-forgotlink{text-align:center;}
+.signin-form>div{width: 33.33%;}
+.signin-btn{   background: #009E0F;color: #fff;padding: 8px 29px;border-radius: 4px;border: 1px solid #000000a3; margin-top: 13px;}
+.signin-forgotlink>a,.signin-signuplink>a,.signun-link>a{text-decoration: none; color: #6EA9EE;}
+.signin-signuplink>span { color: #B5B5B5; }
+.signin-signuplink{text-align:center; padding: 40px 0 150px 0;}
+
+/* signup page */
+.signup-cancelbtn{ background: #CF2A27;color: #fff;padding: 8px 20px;border-radius: 4px;border: 1px solid #000000a3; margin-top: 13px;}
+.signup-createbtn{ background: #009E0F;color: #fff;padding: 8px 20px;border-radius: 4px;border: 1px solid #000000a3; margin-top: 13px;}
+.signun-link>span { color: #B5B5B5; }
+.signup-form>div{width: 33.33%;}
+.signun-link{text-align:center; padding: 0px 0 220px 0;}
+.signup-form{display: flex; justify-content: center;    padding: 100px 70px 50px 70px;}
+.signup-checkboxdiv{padding: 10px 5px;}
+.signup-checkboxdiv>label{color: #9e9898}
+
+
+/* userreview page */
+
+.review-main { display: flex;  flex-wrap: wrap;margin: 50px 0px;}
+.review-card {width: 33.33%;}
+.review-cardinner { background: #EEEEEE;margin: 15px;padding: 15px;}
+.review-cardtext {color: #C9C9C9;font-weight: 600;}
+.review-cardname {color: #5389E4;margin-bottom: 0;}
+.review-cardstatus,.review-cardcity{margin: 0;}
+
+/* FAQ page */
+.accordion {
+    background-color: #EEEEEE;
+    color: #2B78E4;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #EEEEEE;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #3CB147;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #EEEEEE;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .faq-accordian {
+    margin: 60px 30px 90px 30px;
+}
+.faq-accordian>div{
+    margin-bottom: 10px;
+}
+
+
+/* card sample page */
+
+.profile-card {
+    background-color: #EEEEEE;
+    margin-bottom: 20px;
+        
+      }
+      
+  .profile-pic {
+    border-radius: 50%;
+    position: absolute;
+    top: -65px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    max-width: 100px;
+    -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+          }
+  
+          
+  .profile-info {
+      color: #BDBDBD;
+      padding: 25px;
+        position: relative;
+        margin-top: 15px;
+          }
+      
+  .profile-info h2 {
+    /* color: #E8E8E8; */
+    color: #000;
+      /* letter-spacing: 4px; */
+      /* padding-bottom: 12px; */
+      width: 100%;
+      text-align: center;
+          }
+          
+  .profile-info span {
+    display: block;
+      font-size: 13px;
+      color: #A7A7A7;
+    /* letter-spacing: 2px; */
+        }
+  
+  .profile-info a {
+     color: #4CB493;
+      }
+  /* .profile-info i {
+        padding: 15px 35px 0px 35px;
+      } */
+      
+  
+  /* .profile-card:hover .profile-pic {
+    transform: scale(1.1);
+      } */
+  
+  /* .profile-card:hover .profile-info hr  {
+    opacity: 1;
+      }
+       */
+      
+      
+      
+  /* Underline From Center */
+  .hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 52%;
+    right: 52%;
+    bottom: 0;
+    background: #FFFFFF;
+    border-radius: 50%;
+    height: 3px;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  /* .profile-card:hover .hvr-underline-from-center:before, .profile-card:focus .hvr-underline-from-center:before, .profile-card:active .hvr-underline-from-center:before {
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #CECECE;
+    border-radius: 0;
+  } */
+  
+  .profile-card{
+    margin: 10px;
+  }
+.sample-img{
+    width: 100%;
+    height: 180px;
+}
+.profile-aboutustext{
+    text-align: center;
+    color: #222222;
+    margin: 10px;
+}
+
+
+.cardsample_icons {
+    /* border-radius: 48%; */
+    /* background: antiquewhite; */
+    /* padding: 10px; */
+    color: #fff;
+    background: #999999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+.cardsample_icondiv{
+    text-align: center;
+}
+
+
+.cardsample-orderbtn{   background: #2B78E4;color: #fff;padding: 8px 29px;border-radius: 4px;border: 1px solid #000000a3; margin-top: 23px;}
+.cardsample-btndiv{    text-align: center; width: 100%;}
+
+/* loginhome */
+
+.tab {
+  float: left;
+  /* border: 1px solid blue; */
+  background-color: #F7F7F7;
+  width: 18%;
+  height: 242px;
+  /* height: 200px; */
+}
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #000;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tab button:hover {
+  background-color: gray;
+}
+.tab button.activetab {
+  background-color: #EEEEEE;
+  color: #498FE6;
+  border-bottom: 1px solid #498FE6;
+}
+.loginhome-tabbody {
+  float: left;
+  padding: 0px 10px;
+  /* border: 1px solid; */
+  width: 80%;
+  border-left: none;
+  /* margin-top: 38px; */
+  /* height: 200px; */
+}
+
+
+.loginhome-main {
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+  margin: 60px 0 0 0;
+  min-height: 700px;
+}
+.loginhome_tabicon {
+  margin-right: 10px;
+}
+/* edit profile tab */
+.editprofile-tabbtn { background: #009E0F; color: #fff; padding: 7px 30px; border-radius: 4px; border: 1px solid #000000a3;}
+.editprofile-btn{text-align: center;    margin-top: 10px;}
+.login-edittab{ text-align:center !important; text-align: -webkit-center !important; margin-top: 38px;}
+.login-editprofile { width: 33.33%; }
+
+/* myorder tab */
+#myordersTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#myordersTable td, #myordersTable th {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+
+}
+
+#myordersTable tr{background-color: #F7F7F7;}
+
+#myordersTable tr:hover {background-color: #ddd;}
+
+#myordersTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #666666;
+  color: white;
+}

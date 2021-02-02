@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>LinkMe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  crossorigin="anonymous">
+    <link href="./assets/css/style.css" rel="stylesheet"></head>
+    <link href="./assets/css/media.css" rel="stylesheet">
+<body>
+    <div class="app-main">
+       <div class="contact-body">
+         <!--------------------------------------- header ----------------------------------------------->
+         <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                LINKME
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+              <a href="#" >Home</a>
+              <a href="#" >Reviews</a>
+              <a href="#" >Examples</a>
+              <a href="#" >Buy Card</a>
+              <a href="#" >FAQs</a>
+              <a href="#" >Support</a>
+              <a href="#" >Contact Us</a>
+              <a href="#" >Sign Up</a>  
+              <a href="#" ><button class="navbar-btn" type="submit" value="Submit"><i class="fa fa-caret-right" aria-hidden="true"></i>Sign In</button></a>
+            </div>
+          </div>
+         <!--------------------------------------- header close ----------------------------------------->
+         <!--  -->
+         <div class="loginhome-main">
+              <!-- ************************************************************** -->
+              <div class="tab">
+                <button class="loginhome-tabbutton" onclick="infofunc(event, 'createcard')" id="currenttab"><i class="fa fa-pencil loginhome_tabicon" aria-hidden="true"></i>Create Card</button>
+                <button class="loginhome-tabbutton" onclick="infofunc(event, 'viewcard')"><i class="fa fa-address-book-o loginhome_tabicon" aria-hidden="true"></i>View My Card</button>
+                <button class="loginhome-tabbutton" onclick="infofunc(event, 'editprofile')"><i class="fa fa-unlock-alt loginhome_tabicon" aria-hidden="true"></i>Edit Profile</button>
+                <button class="loginhome-tabbutton" onclick="infofunc(event, 'myorder')"><i class="fa fa-shopping-cart loginhome_tabicon" aria-hidden="true"></i>My Orders</button>
+             </div>
+             <!-- Create Card body -->
+             <div id="createcard" class="loginhome-tabbody">
+                <h3>Create Card</h3>
+             </div>
+             <!-- View My Card body -->
+             <div id="viewcard" class="loginhome-tabbody">
+                <h3>View My Card</h3>
+             </div>
+             <!-- Edit Profile Card body -->
+             <div id="editprofile" class="loginhome-tabbody login-edittab">
+                 <div class="login-editprofile"></div>
+                 <div class="login-editprofile">
+                    <form class="form-inner">
+                        <input type="text" id="name" name="name" placeholder="Enter Old Password">
+                        <input type="text" id="email" name="email" placeholder="Enter New Password">
+                        <input type="text" id="contact" name="contact" placeholder="Enter New Password Again">
+                        <div class="editprofile-btn"><button class="editprofile-tabbtn" type="submit" value="Submit">Update</button></div>
+                    </form>
+                 </div>
+                 <div class="login-editprofile"></div>
+             </div>
+             <!-- My Orders Card body -->
+             <div id="myorder" class="loginhome-tabbody">
+                <div class="myorder_tablediv">
+                    <table id="myordersTable">
+                        <tr>
+                          <th>Order #</th>
+                          <th>Purchase Date</th>
+                          <th>Qty</th>
+                          <th>Option</th>
+                          <th>Amount Paid</th>
+                        </tr>
+                        <tr>
+                          <td>32561</td>
+                          <td>02/28/2021</td>
+                          <td>1</td>
+                          <td>Black</td>
+                          <td>$10.00</td>
+                        </tr>
+                        <tr>
+                            <td>45876</td>
+                            <td>02/28/2021</td>
+                            <td>1</td>
+                            <td>White</td>
+                            <td>$10.00</td>
+                        </tr>
+                        <tr>
+                            <td>78945</td>
+                            <td>02/28/2021</td>
+                            <td>2</td>
+                            <td>Pink</td>
+                            <td>$10.00</td>
+                        </tr>
+                        <tr>
+                            <td>65477</td>
+                            <td>02/28/2021</td>
+                            <td>1</td>
+                            <td>Black</td>
+                            <td>$10.00</td>
+                        </tr>
+                        <tr>
+                            <td>84579</td>
+                            <td>02/28/2021</td>
+                            <td>3</td>
+                            <td>White</td>
+                            <td>$10.00</td>
+                        </tr>
+                      </table>
+                </div>
+             </div>
+              <!-- *************************************************************** -->
+         </div>
+
+         <div class="footer">
+               <div class="footer-links">
+                    <div class="footer-link1">
+                        <h1>Link Me</h1>
+                        <a>201, Park Avenue,<br> Toronto, Canada</a>
+                    </div>
+                    <div class="footer-link2">
+                    <ul>
+                       <li><a href="#">Company</a></li>
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">Reviews</a></li>
+                       <li><a href="#">Examples</a></li>
+                       <li><a href="#">Faqs</a></li>
+                    </ul>
+                    </div>
+                    <div class="footer-link3">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-phone-square footer-icon" aria-hidden="true"></i> support@linkme.com</a></li>
+                            <li><a href="#"> </a></li>
+                            <li><a href="#"><i class="fa fa-envelope footer-icon" aria-hidden="true"></i> +1-8720012348</a></li>
+                         </ul>
+                    </div>
+                    <div class="footer-link4">
+                        <h1>We Accept</h1>
+                        <div class="footer-brands">
+                            <ul class="test">
+                                <li><img src="https://via.placeholder.com/150" alt=""></li>
+                                <li><img src="https://via.placeholder.com/150" alt=""></li>
+                                <li><img src="https://via.placeholder.com/150" alt=""></li>
+                                <li><img src="https://via.placeholder.com/150" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="footer-subscribe-btn"><button class="subscribe-btn">Subscribe Now</button></div>
+                    </div>
+               </div>
+               <div class="footer2-section">
+                    <div><p  class="footer2-left">Terms & Condition | Privacy Policy</p></div>
+                    <div><p  class="footer2-right">Copyright 2021,All rights reserved LinkMe</p></div>
+               </div>
+         </div>
+         
+       </div>
+    </div>
+ <script type="text/javascript" src="./assets/scripts/main.js"></script>
+</body>
+</html>
