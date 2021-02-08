@@ -30,3 +30,53 @@ function infofunc(e, info) {
   e.currentTarget.className += " activetab";
 }
 document.getElementById("currenttab").click();
+
+
+// ---------------------------------------------
+
+function changeImage(urls) {
+  console.log('check change',urls);
+  document.querySelector('img[name="edit-save"]').src = urls;
+ 
+}
+
+
+// -----------------------------------------------
+
+
+
+var fileTag = document.getElementById("filetag"),
+    preview = document.getElementById("preview");
+    
+fileTag.addEventListener("change", function() {
+  addImage(this);
+});
+
+function addImage(input) {
+  var reader;
+
+  if (input.files && input.files[0]) {
+    reader = new FileReader();
+
+    reader.onload = function(e) {
+      preview.setAttribute('src', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+// -----------------------------------------------
+
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+  var x = document.getElementsByTagName("BODY")[0];
+  x.style.backgroundColor = "#EEEEEE";
+
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+  var x = document.getElementsByTagName("BODY")[0];
+  x.style.backgroundColor = "white";
+}

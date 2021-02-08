@@ -1,5 +1,5 @@
 body{ max-width: 970PX; box-sizing: border-box; margin: 0 auto;}
-
+h1,h2,h3,h4,h5,h6,p,a{font-family: Arial, Helvetica, sans-serif;}
 /* contact us page */
 .contact-body .contact-banner{background-color: #dddddd;}
 .contact-body .contact-heading{margin: 0;padding: 80px;}
@@ -299,8 +299,8 @@ body{ max-width: 970PX; box-sizing: border-box; margin: 0 auto;}
 }
 .tab button.activetab {
   background-color: #EEEEEE;
-  color: #498FE6;
-  border-bottom: 1px solid #498FE6;
+  color: #3880E5;
+  border-bottom: 1px solid #3880E5;
 }
 .loginhome-tabbody {
   float: left;
@@ -317,7 +317,7 @@ body{ max-width: 970PX; box-sizing: border-box; margin: 0 auto;}
   display: flex;
   width: 100%;
   margin: 10px 0;
-  margin: 60px 0 0 0;
+  /* margin: 60px 0 0 0; */
   min-height: 700px;
 }
 .loginhome_tabicon {
@@ -352,4 +352,458 @@ body{ max-width: 970PX; box-sizing: border-box; margin: 0 auto;}
   text-align: left;
   background-color: #666666;
   color: white;
+}
+
+/* create card body */
+.cr_card_title{
+  margin-top: 0;
+}
+.cr_select_cardtype {
+  display: flex;
+  justify-content: space-around;
+  background: #c6c6c64d;
+  padding: 35px 0;  
+}
+.cr_cardtype_inner {
+  text-align: center;
+}
+.cr_cardtype_inner >i{font-size: 50px;}
+
+/* input[type=checkbox] {
+  width: 18px;
+    height: 18px;
+  
+} */
+
+ /* Hide the default checkbox */ 
+ .cr_select_cardtype input[type=checkbox] { 
+  /* visibility: hidden;  */
+  display: none;
+} 
+
+/* Creating a custom checkbox 
+based on demand */ 
+.geekmark { 
+  position: absolute; 
+  border-radius: 3px;
+  /* top: 0; 
+  left: 0;  */
+  height: 18px; 
+  width: 18px; 
+  background-color: #CCCCCC;; 
+} 
+
+/* Specify the background color to be 
+shown when hovering over checkbox */ 
+/* .main:hover input ~ .geekmark { 
+  background-color: yellow; 
+}  */
+
+/* Specify the background color to be 
+shown when checkbox is active */ 
+ /* input:active ~ .geekmark { 
+  background-color: red; 
+}  */
+
+/* Specify the background color to be 
+shown when checkbox is checked */ 
+ input:checked ~ .geekmark { 
+  background-color: green; 
+} 
+
+/* Checkmark to be shown in checkbox */ 
+/* It is not be shown when not checked */ 
+.geekmark:after { 
+  content: ""; 
+  position: absolute; 
+  display: none; 
+} 
+
+/* Display checkmark when checked */ 
+input:checked ~ .geekmark:after { 
+  display: block; 
+} 
+
+/* Styling the checkmark using webkit */ 
+/* Rotated the rectangle by 45 degree and  
+showing only two border to make it look 
+like a tickmark */ 
+.geekmark:after { 
+  left: 6px;
+    bottom: 4px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    /* border-radius: 0px; */
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 
+
+label.main {
+  margin-right: 17px;
+}
+
+.cr_card_price  {
+  margin: 12px 0;
+}
+
+.cr_select_design>h4,.cr_detail_form>h4,.cr_customize>h4{ font-size: 17px; color: #3880E5;}
+.cr_title2_text{color: #222 !important; font-weight: 600; font-size: 16px;}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+  opacity: 1;
+  height: 25px;
+  border: 1px solid black !important;
+
+}
+.cr_card_numbertext>input{
+    width: 42px;
+    height: 25px;
+    margin-left: 10px;
+}
+.cr_card_numbeinner {
+  color: #A7A7A7;
+}
+.cr_card_numberdiv {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.cr_select_design {
+  border-bottom: 2px solid #E5E5E5;
+}
+.cr_detail_form>input{
+  background: #80808014;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #8080809e;
+  padding: 6px;
+  height: 25px;
+}
+.cr_detail_form>textarea{
+  background: #80808014;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #8080809e;
+  padding: 6px;
+}
+.cr_detail_form {
+  width: 97%;
+  border-bottom: 2px solid #E5E5E5;
+  margin-bottom: 10px;
+}
+
+.cr_cu_image {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.cr_cu_show_image {
+  width: 50%;
+  padding: 10px;
+}
+.cr_cu_show_image>p{padding-bottom: 0; margin-bottom: 0;}
+.cr_cu_select_image{
+  overflow-y: scroll;
+  width: 50%;
+  padding: 10px;
+  height: 315px;
+}
+.cr_cu_show_image >a>img{width: 100%;    max-height: 170px; }
+.cr_cu_select_image>a>img{width: 100%; max-height: 170px;    margin-bottom: 10px;}
+.cr_photo_inner {
+  display: flex;
+
+}
+.cr_photo_change {
+  width: 60%;
+}
+.cr_photo_show {
+  width: 40%;
+  text-align: end;
+
+}
+#preview {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+
+
+
+img[src=""] {
+  content:url("../images/avatar.png");
+}
+
+
+ /* input[type="file"] {
+  margin-left: 10px;
+  border: 1px solid #0807072b;
+  background: #8080802e;
+  width: 360px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  direction: rtl;
+} */
+
+input[type="file"] {
+  /* margin-left: 10px; */
+  /* border: 1px solid #0807072b;
+  background: #8080802e; */
+  width: 245px;
+  /* vertical-align: middle; */
+  direction: rtl;
+  padding: 10px;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  /* background: #485dc5;
+  color: #FFFFFF;
+  line-height: 38px;
+  padding: 0px 20px;
+  border: none;
+  float: right; */
+  display: none;
+} 
+
+.browse_label{
+  border-radius: 5px;
+  padding: 3px 9px;
+  border: 1px solid black;
+}
+.browse_label_div {
+  display: inline-block;
+}
+.browse_test {
+  width: 348px;
+  border: 1px solid gray;
+  border: 1px solid #0807072b;
+  background: #8080802e;
+}
+
+/* color pick checkbox */
+.cr_color_checkbox{
+  /* display: block; */
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 40px;
+  margin: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  }
+/* Hide the browser's default checkbox */
+.cr_color_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.cr_color_checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  /* background-color: #eee; */
+}
+
+/* On mouse-over, add a grey background color */
+/* .cr_color_checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+.cr_color_checkbox input:checked ~ .checkmark {
+  /* background-color: #2196F3; */
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.cr_color_checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.checkmark::after {
+  position: absolute;
+  left: 13px;
+  bottom: 9px;
+  width: 8px;
+  height: 22px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  content: "";
+  -webkit-transform: rotate( 45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate( 45deg);
+}
+
+
+.cr_update_color {
+  padding-bottom: 35px;
+  border-bottom: 2px solid #80808085;
+}
+
+/* -------------------- checkbox color-----------*/
+.mark_1{background-color: #CC0000;}
+.mark_2{background-color: #E69138;}
+.mark_3{background-color: #F1C232;}
+.mark_4{background-color: #6AA84F;}
+.mark_5{background-color: #45818E;}
+.mark_6{background-color: #597EAA;}
+.mark_7{background-color: #674EA7;}
+.mark_8{background-color: #A64D79;}
+.mark_9{background-color: #009E0F;}
+.mark_10{background-color: #2B78E4;}
+
+
+.cr_checkout_btn{   background: #009E0F;color: #fff;padding: 8px 29px;border-radius: 4px;border: 1px solid #000000a3; margin-top: 13px;}
+
+.cr_checkout_div {
+  text-align: end;
+  margin-bottom: 50px;
+  margin-top: 12px;
+}
+.cr_checkout_btnarrow{
+  padding-left: 10px;
+}
+
+
+/* ----------- overlay navigation -------------- */
+.nav_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #EEEEEE;
+}
+.cart_icon {
+  font-size: 31px;
+  padding-top: 5px;
+}
+.nav-title {
+  padding-top: 13px;
+}
+/* .overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  transition: 0.5s;
+  background: #EEEEEE;
+} */
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  max-width: 970px;
+  position: fixed;
+  z-index: 111;
+  top: 0;
+  /* left: 0; */
+  overflow-y: hidden;
+  transition: 0.5s;
+  background: #EEEEEE;
+}
+
+.overlay-content {
+  position: relative;
+  /* top: 15%; */
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.overlay a {
+  /* padding: 8px; */
+  text-decoration: none;
+  font-size: 31px;
+  color: #222;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 8px;
+}
+
+/* .overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+} */
+
+/* .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+} */
+
+.overlay .closebtn {
+  /* position: absolute; */
+  /* top: 20px;
+  right: 45px; */
+  /* font-size: 60px; */
+}
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+
+/* ------------------- Tooltip CSS-------------- */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  /* width: 120px; */
+  width: 100%;
+  /* background-color: black; */
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip>p{margin: 0;padding:0;color: #3880E5;}
+.tooltiptext>img{
+  padding: 15px;
+  background-color: black;
+  border-radius: 6px;
 }
