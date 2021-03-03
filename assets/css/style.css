@@ -346,13 +346,11 @@ color: #fff;
 
 /* loginhome */
 
-.tab {
+/* .tab {
   float: left;
-  /* border: 1px solid blue; */
   background-color: #F7F7F7;
   width: 18%;
   height: 242px;
-  /* height: 200px; */
 }
 .tab button {
   display: block;
@@ -375,7 +373,7 @@ color: #fff;
   background-color: #EEEEEE;
   color: #3880E5;
   border-bottom: 1px solid #3880E5;
-}
+} */
 .loginhome-tabbody {
   float: left;
   padding: 0px 10px;
@@ -450,8 +448,10 @@ color: #fff;
 } */
 
  /* Hide the default checkbox */ 
- .cr_select_cardtype input[type=checkbox] { 
-  /* visibility: hidden;  */
+ /* .cr_select_cardtype input[type=checkbox] { 
+  display: none;
+}  */
+.cr_select_cardtype input[type=radio] { 
   display: none;
 } 
 
@@ -460,8 +460,6 @@ based on demand */
 .geekmark { 
   position: absolute; 
   border-radius: 3px;
-  /* top: 0; 
-  left: 0;  */
   height: 18px; 
   width: 18px; 
   background-color: #CCCCCC;; 

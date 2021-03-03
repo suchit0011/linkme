@@ -4,10 +4,39 @@
  }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 769px) { 
   .footer-links ul{
   padding: 0;
  }
+ .tab {
+  float: left;
+  background-color: #F7F7F7;
+  width: 18%;
+  height: 242px;
+}
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #000;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tab button:hover {
+  background-color: gray;
+}
+.tab button.activetab {
+  background-color: #EEEEEE;
+  color: #3880E5;
+  border-bottom: 1px solid #3880E5;
+} 
+
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -46,76 +75,72 @@
 
   @media (max-width: 768px){ 
    
-.nav_section{
-  padding: 10px 15px;
-}
-  .home_define_title {
-    
-    font-size: 18px;
-  }
-  .home_define_linkme{
-    padding: 20px;
-  }
-  .home_benefit_inner {
-    display: flex;
-    flex-direction: column;
-    padding: 20PX;
-}
-.home_benefit_inner1{
-  margin-top: 0;
-  text-align: center;
-}
-.home_benefit_img {
-  width: 50%;
-}
-.home_benefit_inner2 {
-  /* padding-left: 20px; */
-  padding-left: 0px;
-}
-.home_benefit_detail {
-  padding: 10px;
-}
+    .nav_section{
+      padding: 10px 15px;
+    }
+      .home_define_title {
+        
+        font-size: 18px;
+      }
+      .home_define_linkme{
+        padding: 20px;
+      }
+      .home_benefit_inner {
+        display: flex;
+        flex-direction: column;
+        padding: 20PX;
+    }
+    .home_benefit_inner1{
+      margin-top: 0;
+      text-align: center;
+    }
+    .home_benefit_img {
+      width: 50%;
+    }
+    .home_benefit_inner2 {
+      /* padding-left: 20px; */
+      padding-left: 0px;
+    }
+    .home_benefit_detail {
+      padding: 10px;
+    }
 
-.home_cardimg {
-  display: flex;
-  flex-direction: column;
-}
-.home_cardimg_in {
-  width:100%;
-  padding:0  !important;
-} 
-.home_cardimg_size {
-  width: 80%;
-}
-.home_cardimg_div {
-  text-align: center;
-}
-.home_review_main>div {
-  width: 100%;
-}
-.home_cardtitle>h2 {
-  font-size: 18px;
-}
-.footer-links, .footer2-section {
-  display: flex;
-  padding: 15px;
-  flex-direction: column;
-  align-items: center;
-}
-.footer-links ul{
-  padding: 0;
-}
-.footer-links>div{
-  text-align: center;
-}
-.footer2-section>div{
-  text-align: center;
-}
-}
+    .home_cardimg {
+      display: flex;
+      flex-direction: column;
+    }
+    .home_cardimg_in {
+      width:100%;
+      padding:0  !important;
+    } 
+    .home_cardimg_size {
+      width: 80%;
+    }
+    .home_cardimg_div {
+      text-align: center;
+    }
+    .home_review_main>div {
+      width: 100%;
+    }
+    .home_cardtitle>h2 {
+      font-size: 18px;
+    }
+    .footer-links, .footer2-section {
+      display: flex;
+      padding: 15px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-links ul{
+      padding: 0;
+    }
+    .footer-links>div{
+      text-align: center;
+    }
+    .footer2-section>div{
+      text-align: center;
+    }
 
-
-
-@media (max-width:768px) {
     /* ----- navigation -------- */
     .nav > .nav-btn {
       display: inline-block;
@@ -160,7 +185,9 @@
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
-
+    /* .app-main{
+      overflow: hidden;
+    } */
     .home_cardsample_inner {
       display: flex;
       flex-direction: column;
@@ -175,6 +202,50 @@
     }
       .home_aboutus{
         text-align: center;
+      }
+
+      /* login home tab section */
+      .cr_detail_form{
+        width: 96%;
+      }
+        .loginhome-main {
+          display: block;
+          margin: 0px;
+          }
+
+        .tab {
+        width: 99.50%;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        }
+        .tab button {
+          background-color: inherit;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 8px;
+          transition: 0.3s;
+          font-size: 12px;
+        }
+        .tabcontent {
+          display: none;
+          padding: 6px 12px;
+          border: 1px solid #ccc;
+          border-top: none;
+        }
+
+        .loginhome_tabicon {
+          font-size: 20px;
+          margin-right: 10px;
+          display: block;
+          margin-bottom: 5px;
+      }
+
+      .loginhome-tabbody{
+        width: 100%;
+        padding: 0px;
       }
         /* ul li{
           list-style: none;
