@@ -206,13 +206,38 @@
 
       /* login home tab section */
       .cr_detail_form{
-        width: 96%;
+        width: 100%;
+        /* padding: 10px; */
       }
+      .cr_form {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .cr_form>input{
+      background: #80808014;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #8080809e;
+      padding: 6px;
+      height: 25px;
+    }
+    .cr_form>textarea{
+      background: #80808014;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #8080809e;
+      padding: 6px;
+    }
         .loginhome-main {
           display: block;
           margin: 0px;
+          overflow: hidden;
           }
 
+          .cr_photo_upload{
+            padding: 10px;
+          }
         .tab {
         width: 99.50%;
         overflow: hidden;
@@ -229,13 +254,25 @@
           transition: 0.3s;
           font-size: 12px;
         }
+        .tab button.activetab {
+          background-color: #EEEEEE;
+          color: #3880E5;
+          border-bottom: 1px solid #3880E5;
+        } 
         .tabcontent {
           display: none;
           padding: 6px 12px;
           border: 1px solid #ccc;
           border-top: none;
         }
-
+        .tooltip .tooltiptext{
+          left: 0;
+          top: -391px;
+        }
+        .cr_update_color{
+          text-align: center;
+          padding: 5px;
+        }
         .loginhome_tabicon {
           font-size: 20px;
           margin-right: 10px;
@@ -246,7 +283,120 @@
       .loginhome-tabbody{
         width: 100%;
         padding: 0px;
+        /* overflow: scroll; */
       }
+      .myorder_tablediv{
+        overflow-x: scroll;
+        margin-top: 20px;
+      }
+      /* add photo section */
+      .cr_card_title{
+        padding: 10px;
+      }
+      .cr_title2_text,.cr_select_design>h4,.cr_detail_form>h4,.cr_customize>h4{
+        text-align: center;
+      }
+      .cr_card_price {
+        font-size: 14px;
+    }
+    .cr_card_numberdiv{
+      text-align: center;
+    }
+      .cr_photo_change,.cr_photo_show{
+            width: 100%;
+            text-align: center;
+            display: contents;
+      }
+      .cr_photo_inner {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .browse_test {
+      width: 100%;
+    }
+    input[type="file"] {
+      width: 201px;
+    }
+    .cr_checkout_div {
+      text-align: center;
+  }
+  /* Edit profile */
+  .contact-body .form-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+              }
+              .login-editprofile{
+                width: 100%;
+              }
+/*  */
+        .review-main {
+          display: flex;
+          margin: 30px 0px;
+          flex-direction: column;
+          align-items: center;
+        }
+        .review-card {
+          width: 100%;
+        }
+        .contact-body .contact-heading {
+          padding: 25px;
+          font-size: 16px;
+      }
+
+      /* contact us page */
+      .contact-body .contact-form {
+        /* width: 70%; */
+        /* padding: 65px 80px 130px 100px; */
+        width: 100%;
+        padding: 0px;
+    }
+ 
+  .contact-body .contact-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    /* justify-content: space-between; */
+}
+.contact-body .contactform-text {
+  color: #B2B2B2;
+  padding: 0px 20px;
+}
+.contact-body .contact-btn {
+  text-align: center;
+}
+.contact-body .contact-add {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+/* FAQ page */
+.faq-accordian {
+  margin: 60px 20px 90px 20px;
+}
+/* Signin form */
+.signin-form>div {
+  width: 100%;
+}
+.signin-form {
+  display: flex;
+  justify-content: center;
+ padding: 20px;
+}
+
+/* signup form */
+.signup-form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.signup-form>div {
+  width: 100%;
+}
+              /* Card sample page */
         /* ul li{
           list-style: none;
         } */
