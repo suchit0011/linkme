@@ -16,13 +16,16 @@ h4,
 h5,
 h6,
 a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
 }
 h2 {
   font-size: 30px;
 }
 p {
   font-family: "Poppins", sans-serif;
+}
+.home_body {
+  overflow: hidden;
 }
 a.btn-primary {
   text-decoration: none;
@@ -133,6 +136,7 @@ a.btn-primary:hover {
 .footer-link4 > ul > li > span > a {
   text-decoration: none;
   color: #cecece;
+  font-weight: 600;
   line-height: 25px;
 }
 .footer-link1 > a {
@@ -305,8 +309,12 @@ a.btn-primary:hover {
   border: 1px solid #cbcac7;
   background: #2b78e4;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 7px 12px;
   color: #fff;
+  font-size: 18px;
+}
+.navbar-close{
+  background: #CF2A27;
 }
 .navbar-btn > i {
   margin-right: 5px;
@@ -1133,7 +1141,7 @@ input[type="file"]::-webkit-file-upload-button {
 .nav_section_close {
   display: flex;
   justify-content: space-between;
-  padding: 10px 15px;
+  padding: 20px 40px;
   background-color: rgb(238 238 238) !important;
 }
 .open_icon {
