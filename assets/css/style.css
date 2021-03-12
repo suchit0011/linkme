@@ -4,11 +4,37 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
 
-body {
-  max-width: 970px;
+body{
+  margin: 0 auto
+}
+
+.container{
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.container-fluid{
+  width: 100%;
+}
+
+.app-main.wrapper {
+  min-width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
 }
+
+.gradient{
+  background: linear-gradient(90deg, rgba(148, 126, 194, 1) 0%, rgba(226, 110, 94, 1) 62%);
+}
+
+.bg-purple{background-color: #4c2261;}
+.bg-purple-dark{background-color: #1a1a24;}
+.bg-grey{background-color: #E8E8E8;}
+.bg-grey-light{background-color:#F0F0F0;}
+.bg-grey-dark{background-color:#333333;}
+.bg-black{background-color: #000;}
+
 h1,
 h2,
 h3,
@@ -1136,7 +1162,6 @@ input[type="file"]::-webkit-file-upload-button {
   /* padding: 10px 15px; */
   padding: 20px 40px;
   /* background-color: #EEEEEE; */
-  background: linear-gradient(90deg, rgba(148, 126, 194, 1) 0%, rgba(226, 110, 94, 1) 62%);
 }
 .nav_section_close {
   display: flex;
@@ -1597,7 +1622,6 @@ span.timeline_number {
   padding: 15px;
 }
 .home_benefit_inner {
-  background-color: #f1f1f1;
   display: flex;
   padding: 47px;
 }
@@ -1706,7 +1730,6 @@ span.timeline_number {
   box-shadow: 0px 23px 47px #00000047;
 }
 .home_mainbanner {
-  background: linear-gradient(90deg, rgba(148, 126, 194, 1) 0%, rgba(226, 110, 94, 1) 62%);
   display: flex;
   padding: 10px 10px 0px 10px;
 }
@@ -1740,7 +1763,6 @@ span.timeline_number {
   font-size: 33px;
 }
 .home_define_linkme {
-  background-color: #4c2261;
   text-align: center;
   padding: 70px;
 }
