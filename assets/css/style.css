@@ -14,7 +14,7 @@ body{
   margin: 0 auto;
 }
 
-.container-fluid{
+.container-fluid, .full-width{
   width: 100%;
 }
 
@@ -74,9 +74,6 @@ a.btn-primary:hover {
   transition: all 0.5s ease;
 }
 /* contact us page */
-.contact-body .contact-banner {
-  background-color: #dddddd;
-}
 .contact-body .contact-heading {
   margin: 0;
   padding: 80px;
@@ -457,10 +454,14 @@ a.btn-primary:hover {
 .review-card {
   width: 33.33%;
 }
+
 .review-cardinner {
-  background: #eeeeee;
-  margin: 15px;
-  padding: 15px;
+    background: #fff;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 8px 7px rgb(0 0 0 / 3%);
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
 }
 .review-cardtext {
   color: #c9c9c9;
@@ -473,6 +474,7 @@ a.btn-primary:hover {
 .review-cardstatus,
 .review-cardcity {
   margin: 0;
+  color: #999;
 }
 
 /* FAQ page */
@@ -1779,4 +1781,21 @@ span.timeline_number {
 }
 .home_cardimg_size {
   width: 100%;
+}
+
+/* vin css */
+.vinput {
+  height: 39px;
+  background-color: #ffffff !important;
+  border-radius: 25px;
+  padding: 0 20px !important;
+  font-size: 16px;
+  border: 1px solid #f5f5f5; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+.vinput.textarea{
+  min-height: 100px;
+  padding: 10px 20px !important;
+  border-radius: 10px;
 }

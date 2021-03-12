@@ -2,24 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Language" content="en">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>LinkMe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  crossorigin="anonymous">
-    <link href="./assets/css/style.css" rel="stylesheet"></head>
-    <link href="./assets/css/media.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>LinkMe</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous">
+  <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<link href="./assets/css/media.css" rel="stylesheet">
+
 <body>
-    <div class="app-main">
-       <div class="contact-body">
-       <!--------------------------------------- header ----------------------------------------------->
-       <div class="nav_section">
-        <div class="nav-title open_icon"> <img class="nav_iconimg" src="assets/images/brand-logo.png"></div>
-        <div class="nav_right">
-          <span style="font-size:30px;cursor:pointer" class="open_icon" onclick="openNav()">&#9776;</span>
-          <i class="fa fa-shopping-cart cart_icon open_icon" aria-hidden="true"></i>
+  <div class="app-main">
+    <div class="contact-body">
+      <!--------------------------------------- header ----------------------------------------------->
+      <div class="container-fluid gradient">
+        <div class="container">
+          <div class="nav_section">
+            <div class="nav-title open_icon"> <img class="nav_iconimg" src="assets/images/brand-logo.png"></div>
+            <div class="nav_right">
+              <span style="font-size:30px;cursor:pointer" class="open_icon" onclick="openNav()">&#9776;</span>
+              <i class="fa fa-shopping-cart cart_icon open_icon" aria-hidden="true"></i>
+            </div>
+          </div>
         </div>
       </div>
       <div id="myNav" class="overlay">
@@ -43,90 +51,104 @@
           <a href="./signup.html">Sign Up</a>
           <a href="./signin.html"><button class="navbar-btn" type="submit" value="Submit"><i class="fa fa-caret-right"
                 aria-hidden="true"></i>Sign In</button></a>
-          <a href="#"><button class="navbar-btn navbar-close" type="submit" value="Submit"><i class="fa fa-power-off" aria-hidden="true"></i>LogOut</button></a>
+          <a href="#"><button class="navbar-btn navbar-close" type="submit" value="Submit"><i class="fa fa-power-off"
+                aria-hidden="true"></i>LogOut</button></a>
         </div>
       </div>
- 
-   <!--------------------------------------- header close ----------------------------------------->
-         <!--  -->
-         <div class="contact-banner">
-             <div>
-                 <h1 class="contact-heading">SIGN IN</h1>
-             </div>
-         </div>
 
-         <div class="signin-main">
-            <div class="signin-form">
+      <!--------------------------------------- header close ----------------------------------------->
+      <!--  -->
+
+      <div class="container-fluid bg-grey">
+        <div class="container">
+          <div class="contact-banner">
             <div>
-                <form class="form-inner signform-inner">
-                    <input type="text" id="email" name="email" placeholder="Email">
-                    <input type="text" id="name" name="name" placeholder="Password">
-                    <div class="signin-btndiv"><button class="signin-btn" type="submit" value="Submit">Sign In</button></div>
-                </form>
+              <h1 class="contact-heading">SIGN IN</h1>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="container">
+          <div class="signin-main">
+            <div class="signin-form">
+              <div>
+                <form class="form-inner signform-inner">
+                  <input type="text" id="email" name="email" placeholder="Email" class="vinput">
+                  <input type="text" id="name" name="name" placeholder="Password" class="vinput">
+                  <div class="signin-btndiv"><button class="home_btn btn-primary full-width" type="submit" value="Submit">Sign In</button>
+                  </div>
+                </form>
+              </div>
             </div>
             <div class="signin-forgotlink"><a href="#">Forgot Password</a></div>
             <div class="signin-signuplink"><span class="">New to LinkMe?</span><a href="#">Sign up here</a></div>
-         </div>
+          </div>
+        </div>
+      </div>
 
-         <div class="footer">
-          <div class="footer-links">
-               <div class="footer-link1">
-                   <ul>
-                     <li class="footer_linktext">Link Me</li>
-                     <li><a href="javascript:void(0)">201, Park Avenue,<br> Toronto, Canada</a></li>
-                  </ul>
-               </div>
-               <div class="footer-link2">
-               <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Reviews</a></li>
-                  <li><a href="#">Examples</a></li>
-                  <li><a href="#">Buy Card</a></li>
-               </ul>
-               </div>
-               <div class="footer-linknew">
-                 <ul>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                 </ul>
-                 </div>
-               <div class="footer-link3">
-                   <ul>
-                       <li><a href="#"><i class="fa fa-phone-square footer-icon" aria-hidden="true"></i> support@linkme.com</a></li>
-                       <li><a href="#"> </a></li>
-                       <li><a href="#"><i class="fa fa-envelope footer-icon" aria-hidden="true"></i> +1-8720012348</a></li>
-                    </ul>
-               </div>
-               <div class="footer-link4">
-                 <ul>
-                   <li><a href="javascript:void(0)">Subscribe to Newsletter</a></li>
-                   <li>
-                    
-                       <form> 
-                        
-                         <!-- <div class="row"> -->
-                           <div class="input-group suffix">                           
-                              <input class="footer_input" type="text" name="input" placeholder="Your Email">
-                              <span class="input-group-addon "><button class="input_footer_btn"><i class="fa fa-arrow-right footer_arrow" aria-hidden="true"></i></button></span>
-                              <!-- <button class="input-group-addon ">Suffix</button> -->
-                             <!-- <span class="input-group-addon ">Suffix</span> -->
-                           </div>                   
-                         <!-- </div> -->
-                         
-                       </form>
-                    
-                   </li>
-                   <li class="footer_brand_card">
-                     <span><a href="javascript:void(0)">We Accept</a></span> 
-                     <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
-                     <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
-                     <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
-                     <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
-                   </li>
-                </ul>
-                   <!-- <h1>We Accept</h1>
+
+      <div class="footer">
+        <div class="footer-links">
+          <div class="footer-link1">
+            <ul>
+              <li class="footer_linktext">Link Me</li>
+              <li><a href="javascript:void(0)">201, Park Avenue,<br> Toronto, Canada</a></li>
+            </ul>
+          </div>
+          <div class="footer-link2">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Examples</a></li>
+              <li><a href="#">Buy Card</a></li>
+            </ul>
+          </div>
+          <div class="footer-linknew">
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-link3">
+            <ul>
+              <li><a href="#"><i class="fa fa-phone-square footer-icon" aria-hidden="true"></i> support@linkme.com</a>
+              </li>
+              <li><a href="#"> </a></li>
+              <li><a href="#"><i class="fa fa-envelope footer-icon" aria-hidden="true"></i> +1-8720012348</a></li>
+            </ul>
+          </div>
+          <div class="footer-link4">
+            <ul>
+              <li><a href="javascript:void(0)">Subscribe to Newsletter</a></li>
+              <li>
+
+                <form>
+
+                  <!-- <div class="row"> -->
+                  <div class="input-group suffix">
+                    <input class="footer_input" type="text" name="input" placeholder="Your Email">
+                    <span class="input-group-addon "><button class="input_footer_btn"><i
+                          class="fa fa-arrow-right footer_arrow" aria-hidden="true"></i></button></span>
+                    <!-- <button class="input-group-addon ">Suffix</button> -->
+                    <!-- <span class="input-group-addon ">Suffix</span> -->
+                  </div>
+                  <!-- </div> -->
+
+                </form>
+
+              </li>
+              <li class="footer_brand_card">
+                <span><a href="javascript:void(0)">We Accept</a></span>
+                <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
+                <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
+                <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
+                <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
+              </li>
+            </ul>
+            <!-- <h1>We Accept</h1>
                    <div class="footer-brands">
                        <ul class="test">
                            <li><img src="https://via.placeholder.com/150" alt=""></li>
@@ -136,16 +158,21 @@
                        </ul>
                    </div>
                    <div class="footer-subscribe-btn"><button class="subscribe-btn">Subscribe Now</button></div> -->
-               </div>
           </div>
-          <div class="footer2-section">
-               <div><p  class="footer2-left">Terms & Condition | Privacy Policy</p></div>
-               <div><p  class="footer2-right">Copyright 2021,All rights reserved LinkMe</p></div>
+        </div>
+        <div class="footer2-section">
+          <div>
+            <p class="footer2-left">Terms & Condition | Privacy Policy</p>
           </div>
+          <div>
+            <p class="footer2-right">Copyright 2021,All rights reserved LinkMe</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-         
-       </div>
-    </div>
- <script type="text/javascript" src="./assets/scripts/main.js"></script>
+  </div>
+  <script type="text/javascript" src="./assets/scripts/main.js"></script>
 </body>
+
 </html>

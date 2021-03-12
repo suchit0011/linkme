@@ -2,101 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Language" content="en">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>LinkMe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  crossorigin="anonymous">
-    <link href="./assets/css/style.css" rel="stylesheet"></head>
-    <link href="./assets/css/media.css" rel="stylesheet">
-<body>
-    <div class="app-main">
-       <div class="contact-body">
-        <!--------------------------------------- header ----------------------------------------------->
-        <div class="nav_section">
-          <div class="nav-title open_icon"> <img class="nav_iconimg" src="assets/images/brand-logo.png"></div>
-          <div class="nav_right">
-            <span style="font-size:30px;cursor:pointer" class="open_icon" onclick="openNav()">&#9776;</span>
-            <i class="fa fa-shopping-cart cart_icon open_icon" aria-hidden="true"></i>
-          </div>
-        </div>
-        <div id="myNav" class="overlay">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>LinkMe</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous">
+  <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<link href="./assets/css/media.css" rel="stylesheet">
 
-          <div class="nav_section_close">
-            <div class="nav-title close_icon"> <img class="nav_iconimg" src="assets/images/brand-logo.png"></div>
+<body>
+  <div class="app-main">
+    <div class="contact-body">
+      <!--------------------------------------- header ----------------------------------------------->
+      <div class="container-fluid gradient">
+        <div class="container">
+          <div class="nav_section">
+            <div class="nav-title open_icon"> <img class="nav_iconimg" src="assets/images/brand-logo.png"></div>
             <div class="nav_right">
-              <span style="font-size:30px;cursor:pointer" onclick="closeNav()"><i class="fa fa-times close_icon"
-                  aria-hidden="true"></i></span>
-              <i class="fa fa-shopping-cart cart_icon close_icon" aria-hidden="true"></i>
+              <span style="font-size:30px;cursor:pointer" class="open_icon" onclick="openNav()">&#9776;</span>
+              <i class="fa fa-shopping-cart cart_icon open_icon" aria-hidden="true"></i>
             </div>
           </div>
-          <div class="overlay-content">
-            <a href="./index.html">Home</a>
-            <a href="./userreview.html">Reviews</a>
-            <a href="./cardsample.html">Examples</a>
-            <a href="./login_hometab.html">Buy Card</a>
-            <a href="./faq.html">FAQs</a>
-            <a href="./support.html">Support</a>
-            <a href="./contactus.html">Contact Us</a>
-            <a href="./signup.html">Sign Up</a>
-            <a href="./signin.html"><button class="navbar-btn" type="submit" value="Submit"><i class="fa fa-caret-right"
-                  aria-hidden="true"></i>Sign In</button></a>
-            <a href="#"><button class="navbar-btn navbar-close" type="submit" value="Submit"><i class="fa fa-power-off" aria-hidden="true"></i>LogOut</button></a>
+        </div>
+      </div>
+      <div id="myNav" class="overlay">
+
+        <div class="nav_section_close">
+          <div class="nav-title close_icon"> <img class="nav_iconimg" src="assets/images/brand-logo.png"></div>
+          <div class="nav_right">
+            <span style="font-size:30px;cursor:pointer" onclick="closeNav()"><i class="fa fa-times close_icon"
+                aria-hidden="true"></i></span>
+            <i class="fa fa-shopping-cart cart_icon close_icon" aria-hidden="true"></i>
           </div>
         </div>
-   
-     <!--------------------------------------- header close ----------------------------------------->
-         <!--  -->
-         <div class="loginhome-main">
-              <!-- ************************************************************** -->
-              <div class="tab">
-                <button class="loginhome-tabbutton" onclick="infofunc(event, 'createcard')" id="currenttab"><i class="fa fa-pencil loginhome_tabicon" aria-hidden="true"></i>Create Card</button>
-                <button class="loginhome-tabbutton" onclick="infofunc(event, 'viewcard')"><i class="fa fa-address-book-o loginhome_tabicon" aria-hidden="true"></i>View My Card</button>
-                <button class="loginhome-tabbutton" onclick="infofunc(event, 'editprofile')"><i class="fa fa-unlock-alt loginhome_tabicon" aria-hidden="true"></i>Edit Profile</button>
-                <button class="loginhome-tabbutton" onclick="infofunc(event, 'myorder')"><i class="fa fa-shopping-cart loginhome_tabicon" aria-hidden="true"></i>My Orders</button>
-             </div>
-             <!-- Create Card body -->
-             <div id="createcard" class="loginhome-tabbody">
-                <p class="cr_card_title">Please fill in the fields to create your card. Kindly note that some of the fields are mandatory and need the information to create your card.</p>
-                <div class="cr_select_design">
-                  <h4>Select Design</h4>
-                  <div class="cr_select_cardtype">
-                    
-                     <div  class="cr_cardtype_inner">
-                       <i class="fa fa-credit-card" aria-hidden="true"></i>
-                       <h4 class="cr_card_price">Black - $10.00</h4>
-                       <label class="main">
-                         <input type="radio" id="blackcard" name="card" value="blackcard">
-                         <span class="geekmark"></span> 
-                      </label> 
-                     </div>
-                     <div class="cr_cardtype_inner">
-                       <i class="fa fa-credit-card" aria-hidden="true"></i>
-                       <h4 class="cr_card_price">White - $10.00</h4>
-                       <label class="main">
-                         <input type="radio" id="whitecard" name="card" value="whitecard">
-                         <span class="geekmark"></span> 
-                       </label> 
-                     </div>
-                     <div class="cr_cardtype_inner">
-                       <i class="fa fa-credit-card" aria-hidden="true"></i>
-                       <h4 class="cr_card_price">Pink - $10.00</h4>
-                       <label class="main">
-                         <input type="radio" id="pinkcard" name="card" value="pinkcard">
-                         <span class="geekmark"></span> 
-                       </label> 
-                     </div>
+        <div class="overlay-content">
+          <a href="./index.html">Home</a>
+          <a href="./userreview.html">Reviews</a>
+          <a href="./cardsample.html">Examples</a>
+          <a href="./login_hometab.html">Buy Card</a>
+          <a href="./faq.html">FAQs</a>
+          <a href="./support.html">Support</a>
+          <a href="./contactus.html">Contact Us</a>
+          <a href="./signup.html">Sign Up</a>
+          <a href="./signin.html"><button class="navbar-btn" type="submit" value="Submit"><i class="fa fa-caret-right"
+                aria-hidden="true"></i>Sign In</button></a>
+          <a href="#"><button class="navbar-btn navbar-close" type="submit" value="Submit"><i class="fa fa-power-off"
+                aria-hidden="true"></i>LogOut</button></a>
+        </div>
+      </div>
+
+      <!--------------------------------------- header close ----------------------------------------->
+      <!--  -->
+      <div class="container-fluid">
+        <div class="container">
+          <div class="loginhome-main">
+            <!-- ************************************************************** -->
+            <div class="tab">
+              <button class="loginhome-tabbutton" onclick="infofunc(event, 'createcard')" id="currenttab"><i
+                  class="fa fa-pencil loginhome_tabicon" aria-hidden="true"></i>Create Card</button>
+              <button class="loginhome-tabbutton" onclick="infofunc(event, 'viewcard')"><i
+                  class="fa fa-address-book-o loginhome_tabicon" aria-hidden="true"></i>View My Card</button>
+              <button class="loginhome-tabbutton" onclick="infofunc(event, 'editprofile')"><i
+                  class="fa fa-unlock-alt loginhome_tabicon" aria-hidden="true"></i>Edit Profile</button>
+              <button class="loginhome-tabbutton" onclick="infofunc(event, 'myorder')"><i
+                  class="fa fa-shopping-cart loginhome_tabicon" aria-hidden="true"></i>My Orders</button>
+            </div>
+            <!-- Create Card body -->
+            <div id="createcard" class="loginhome-tabbody">
+              <p class="cr_card_title">Please fill in the fields to create your card. Kindly note that some of the
+                fields are mandatory and need the information to create your card.</p>
+              <div class="cr_select_design">
+                <h4>Select Design</h4>
+                <div class="cr_select_cardtype">
+
+                  <div class="cr_cardtype_inner">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    <h4 class="cr_card_price">Black - $10.00</h4>
+                    <label class="main">
+                      <input type="radio" id="blackcard" name="card" value="blackcard">
+                      <span class="geekmark"></span>
+                    </label>
                   </div>
-                    <div class="cr_card_numberdiv">
-                   <p class="cr_card_numbertext"> <span class="cr_card_numbeinner"> Number of Cards </span> <input type="number" id="cardnumber" name="cardnumber" min="1"></p>
-                   </div>
+                  <div class="cr_cardtype_inner">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    <h4 class="cr_card_price">White - $10.00</h4>
+                    <label class="main">
+                      <input type="radio" id="whitecard" name="card" value="whitecard">
+                      <span class="geekmark"></span>
+                    </label>
+                  </div>
+                  <div class="cr_cardtype_inner">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    <h4 class="cr_card_price">Pink - $10.00</h4>
+                    <label class="main">
+                      <input type="radio" id="pinkcard" name="card" value="pinkcard">
+                      <span class="geekmark"></span>
+                    </label>
+                  </div>
                 </div>
-                <div class="cr_detail_form">
-                  <h4>Your Details</h4>  
-                  <div class="cr_form_box">
-                    <form class="cr_form">
+                <div class="cr_card_numberdiv">
+                  <p class="cr_card_numbertext"> <span class="cr_card_numbeinner"> Number of Cards </span> <input
+                      type="number" id="cardnumber" name="cardnumber" min="1"></p>
+                </div>
+              </div>
+              <div class="cr_detail_form">
+                <h4>Your Details</h4>
+                <div class="cr_form_box">
+                  <form class="cr_form">
                     <input type="text" id="crname" name="crname" placeholder="Your Name">
                     <input type="text" id="cremail" name="cremail" placeholder="Last Name">
                     <input type="text" id="crcontact" name="crcontact" placeholder="Phone Number">
@@ -109,48 +126,55 @@
                     <input type="text" id="crtwitter" name="crtwitter" placeholder="Twitter">
                     <input type="text" id="crfacebook" name="crfacebook" placeholder="Facebook">
                     <input type="text" id="crwhatsapp" name="crwhatsapp" placeholder="whatsApp">
-                    <textarea id="aboutme" name="aboutme" rows="4" cols="50" placeholder="About Me / Business"></textarea>
+                    <textarea id="aboutme" name="aboutme" rows="4" cols="50"
+                      placeholder="About Me / Business"></textarea>
                   </form>
+                </div>
+              </div>
+              <div class="cr_customize">
+                <h4>Customize Your Card</h4>
+                <h4 class="cr_title2_text">Add a Header Image</h4>
+
+                <div class="cr_cu_image">
+                  <div class="cr_cu_show_image">
+                    <a class="test1"><img src="https://picsum.photos/id/237/200/300" name="edit-save"
+                        id="imgClickAndChange"></img></a>
+                    <p>You have to select one photo from the picture library on the right. Selected picture will be set
+                      as background.
+
+                    <div class="tooltip">
+                      <p>View Example</p>
+                      <span class="tooltiptext"><img class=""
+                          src="https://via.placeholder.com/220x350?text=300x600+Half+Page+Ad"></span>
+                    </div>
+                    </a></p>
+                  </div>
+                  <div class="cr_cu_select_image">
+                    <a class="test2" onclick="changeImage('https://picsum.photos/seed/picsum/200/300')"><img
+                        src="https://picsum.photos/seed/picsum/200/300"></img></a>
+                    <a class="test2" onclick="changeImage('https://picsum.photos/200/300?grayscale')"><img
+                        src="https://picsum.photos/200/300?grayscale"></img></a>
                   </div>
                 </div>
-                <div class="cr_customize">
-                  <h4>Customize Your Card</h4>
-                  <h4 class="cr_title2_text">Add a Header Image</h4> 
-               
-                 <div class="cr_cu_image">
-                    <div class="cr_cu_show_image">
-                      <a class="test1" ><img src="https://picsum.photos/id/237/200/300"  name="edit-save" id="imgClickAndChange" ></img></a>
-                      <p>You have to select one photo from the picture library on the right. Selected picture will be set as background.
-                         
-                         <div class="tooltip"><p>View Example</p>
-                          <span class="tooltiptext"><img class="" src="https://via.placeholder.com/220x350?text=300x600+Half+Page+Ad"></span>
-                        </div>
-                        </a></p>
-                    </div>
-                    <div class="cr_cu_select_image">
-                      <a class="test2" onclick="changeImage('https://picsum.photos/seed/picsum/200/300')"><img src="https://picsum.photos/seed/picsum/200/300"></img></a>
-                      <a class="test2" onclick="changeImage('https://picsum.photos/200/300?grayscale')"><img src="https://picsum.photos/200/300?grayscale"></img></a>
-                    </div>
-                 </div>
-           
-              </div>   
+
+              </div>
               <div class="cr_photo_upload">
                 <h4 class="cr_title2_text">Add Your Photo or Logo</h4>
                 <!--  -->
-                  <div class="cr_photo_inner">
-                    <div class="cr_photo_change">
-                    <form >
+                <div class="cr_photo_inner">
+                  <div class="cr_photo_change">
+                    <form>
                       <div class="browse_test">
                         <input type="file" id="filetag" name="filetag" multiple>
-                          <div class="browse_label_div">
-                           <label for="filetag" class="browse_label">Browse</label>
-                         </div>
-                       </div>
+                        <div class="browse_label_div">
+                          <label for="filetag" class="browse_label">Browse</label>
+                        </div>
+                      </div>
                     </form>
                     <p>Maximum file size 10 MB. Accepted file format .jpg,.png</p>
                   </div>
                   <div class="cr_photo_show">
-                    <img src="" id="preview" >
+                    <img src="" id="preview">
                   </div>
                 </div>
                 <!--  -->
@@ -171,7 +195,7 @@
                 </label>
                 <label class="cr_color_checkbox">
                   <input type="radio" id="mark_4" name="selectmark" value="mark_4">
-                 
+
                   <span class="checkmark mark_4"></span>
                 </label>
                 <label class="cr_color_checkbox">
@@ -180,7 +204,7 @@
                 </label>
                 <label class="cr_color_checkbox">
                   <input type="radio" id="mark_6" name="selectmark" value="mark_6">
-                 
+
                   <span class="checkmark mark_6"></span>
                 </label>
                 <label class="cr_color_checkbox">
@@ -189,7 +213,7 @@
                 </label>
                 <label class="cr_color_checkbox">
                   <input type="radio" id="mark_8" name="selectmark" value="mark_8">
-                 
+
                   <span class="checkmark mark_8"></span>
                 </label>
                 <label class="cr_color_checkbox">
@@ -202,139 +226,152 @@
                 </label>
               </div>
               <div class="cr_checkout_div">
-                <button class="cr_checkout_btn" type="submit" value="Submit">Preview & Checkout <i class="fa fa-arrow-right cr_checkout_btnarrow" aria-hidden="true"></i></button>
+                <button class="cr_checkout_btn" type="submit" value="Submit">Preview & Checkout <i
+                    class="fa fa-arrow-right cr_checkout_btnarrow" aria-hidden="true"></i></button>
               </div>
-             </div>
-             <!-- View My Card body -->
-             <div id="viewcard" class="loginhome-tabbody">
-                <h3>View My Card</h3>
-             </div>
-             <!-- Edit Profile Card body -->
-             <div id="editprofile" class="loginhome-tabbody login-edittab">
-                 <div class="login-editprofile"></div>
-                 <div class="login-editprofile">
-                    <form class="form-inner">
-                        <input type="text" id="name" name="name" placeholder="Enter Old Password">
-                        <input type="text" id="email" name="email" placeholder="Enter New Password">
-                        <input type="text" id="contact" name="contact" placeholder="Enter New Password Again">
-                        <div class="editprofile-btn"><button class="editprofile-tabbtn" type="submit" value="Submit">Update</button></div>
-                    </form>
-                 </div>
-                 <div class="login-editprofile"></div>
-             </div>
-             <!-- My Orders Card body -->
-             <div id="myorder" class="loginhome-tabbody">
-                <div class="myorder_tablediv">
-                    <table id="myordersTable">
-                        <tr>
-                          <th>Order #</th>
-                          <th>Purchase Date</th>
-                          <th>Qty</th>
-                          <th>Option</th>
-                          <th>Amount Paid</th>
-                        </tr>
-                        <tr>
-                          <td>32561</td>
-                          <td>02/28/2021</td>
-                          <td>1</td>
-                          <td>Black</td>
-                          <td>$10.00</td>
-                        </tr>
-                        <tr>
-                            <td>45876</td>
-                            <td>02/28/2021</td>
-                            <td>1</td>
-                            <td>White</td>
-                            <td>$10.00</td>
-                        </tr>
-                        <tr>
-                            <td>78945</td>
-                            <td>02/28/2021</td>
-                            <td>2</td>
-                            <td>Pink</td>
-                            <td>$10.00</td>
-                        </tr>
-                        <tr>
-                            <td>65477</td>
-                            <td>02/28/2021</td>
-                            <td>1</td>
-                            <td>Black</td>
-                            <td>$10.00</td>
-                        </tr>
-                        <tr>
-                            <td>84579</td>
-                            <td>02/28/2021</td>
-                            <td>3</td>
-                            <td>White</td>
-                            <td>$10.00</td>
-                        </tr>
-                      </table>
-                </div>
-             </div>
-              <!-- *************************************************************** -->
-         </div>
+            </div>
+            <!-- View My Card body -->
+            <div id="viewcard" class="loginhome-tabbody">
+              <h3>View My Card</h3>
+            </div>
+            <!-- Edit Profile Card body -->
+            <div id="editprofile" class="loginhome-tabbody login-edittab">
+              <div class="login-editprofile"></div>
+              <div class="login-editprofile">
+                <form class="form-inner">
+                  <input type="text" id="name" name="name" placeholder="Enter Old Password">
+                  <input type="text" id="email" name="email" placeholder="Enter New Password">
+                  <input type="text" id="contact" name="contact" placeholder="Enter New Password Again">
+                  <div class="editprofile-btn"><button class="editprofile-tabbtn" type="submit"
+                      value="Submit">Update</button></div>
+                </form>
+              </div>
+              <div class="login-editprofile"></div>
+            </div>
+            <!-- My Orders Card body -->
+            <div id="myorder" class="loginhome-tabbody">
+              <div class="myorder_tablediv">
+                <table id="myordersTable">
+                  <tr>
+                    <th>Order #</th>
+                    <th>Purchase Date</th>
+                    <th>Qty</th>
+                    <th>Option</th>
+                    <th>Amount Paid</th>
+                  </tr>
+                  <tr>
+                    <td>32561</td>
+                    <td>02/28/2021</td>
+                    <td>1</td>
+                    <td>Black</td>
+                    <td>$10.00</td>
+                  </tr>
+                  <tr>
+                    <td>45876</td>
+                    <td>02/28/2021</td>
+                    <td>1</td>
+                    <td>White</td>
+                    <td>$10.00</td>
+                  </tr>
+                  <tr>
+                    <td>78945</td>
+                    <td>02/28/2021</td>
+                    <td>2</td>
+                    <td>Pink</td>
+                    <td>$10.00</td>
+                  </tr>
+                  <tr>
+                    <td>65477</td>
+                    <td>02/28/2021</td>
+                    <td>1</td>
+                    <td>Black</td>
+                    <td>$10.00</td>
+                  </tr>
+                  <tr>
+                    <td>84579</td>
+                    <td>02/28/2021</td>
+                    <td>3</td>
+                    <td>White</td>
+                    <td>$10.00</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!-- *************************************************************** -->
+          </div>
 
-         <div class="footer">
-          <div class="footer-links">
-               <div class="footer-link1">
-                   <ul>
-                     <li class="footer_linktext">Link Me</li>
-                     <li><a href="javascript:void(0)">201, Park Avenue,<br> Toronto, Canada</a></li>
-                  </ul>
-               </div>
-               <div class="footer-link2">
-               <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Reviews</a></li>
-                  <li><a href="#">Examples</a></li>
-                  <li><a href="#">Buy Card</a></li>
-               </ul>
-               </div>
-               <div class="footer-linknew">
-                 <ul>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                 </ul>
-                 </div>
-               <div class="footer-link3">
-                   <ul>
-                       <li><a href="#"><i class="fa fa-phone-square footer-icon" aria-hidden="true"></i> support@linkme.com</a></li>
-                       <li><a href="#"> </a></li>
-                       <li><a href="#"><i class="fa fa-envelope footer-icon" aria-hidden="true"></i> +1-8720012348</a></li>
-                    </ul>
-               </div>
-               <div class="footer-link4">
-                 <ul>
-                   <li><a href="javascript:void(0)">Subscribe to Newsletter</a></li>
-                   <li>
-                       <form> 
-                           <div class="input-group suffix">                           
-                              <input class="footer_input" type="text" name="input" placeholder="Your Email">
-                              <span class="input-group-addon "><button class="input_footer_btn"><i class="fa fa-arrow-right footer_arrow" aria-hidden="true"></i></button></span>
-                           </div>                   
-                       </form>
-                   </li>
-                   <li class="footer_brand_card">
-                     <span><a href="javascript:void(0)">We Accept</a></span> 
-                     <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
-                     <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
-                     <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
-                     <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
-                   </li>
-                </ul>
-               </div>
+        </div>
+      </div>
+
+
+      <div class="footer">
+        <div class="footer-links">
+          <div class="footer-link1">
+            <ul>
+              <li class="footer_linktext">Link Me</li>
+              <li><a href="javascript:void(0)">201, Park Avenue,<br> Toronto, Canada</a></li>
+            </ul>
           </div>
-          <div class="footer2-section">
-               <div><p  class="footer2-left">Terms & Condition | Privacy Policy</p></div>
-               <div><p  class="footer2-right">Copyright 2021,All rights reserved LinkMe</p></div>
+          <div class="footer-link2">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Examples</a></li>
+              <li><a href="#">Buy Card</a></li>
+            </ul>
           </div>
-         </div>
-         
-       </div>
+          <div class="footer-linknew">
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-link3">
+            <ul>
+              <li><a href="#"><i class="fa fa-phone-square footer-icon" aria-hidden="true"></i> support@linkme.com</a>
+              </li>
+              <li><a href="#"> </a></li>
+              <li><a href="#"><i class="fa fa-envelope footer-icon" aria-hidden="true"></i> +1-8720012348</a></li>
+            </ul>
+          </div>
+          <div class="footer-link4">
+            <ul>
+              <li><a href="javascript:void(0)">Subscribe to Newsletter</a></li>
+              <li>
+                <form>
+                  <div class="input-group suffix">
+                    <input class="footer_input" type="text" name="input" placeholder="Your Email">
+                    <span class="input-group-addon "><button class="input_footer_btn"><i
+                          class="fa fa-arrow-right footer_arrow" aria-hidden="true"></i></button></span>
+                  </div>
+                </form>
+              </li>
+              <li class="footer_brand_card">
+                <span><a href="javascript:void(0)">We Accept</a></span>
+                <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
+                <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
+                <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
+                <span><img class="footer_brandimg" src="https://via.placeholder.com/150" alt=""></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer2-section">
+          <div>
+            <p class="footer2-left">Terms & Condition | Privacy Policy</p>
+          </div>
+          <div>
+            <p class="footer2-right">Copyright 2021,All rights reserved LinkMe</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-    
-    <script type="text/javascript" src="./assets/scripts/main.js"></script>
- 
+  </div>
+
+  <script type="text/javascript" src="./assets/scripts/main.js"></script>
+
 </body>
+
 </html>

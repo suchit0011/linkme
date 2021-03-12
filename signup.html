@@ -15,15 +15,19 @@
     <div class="app-main">
        <div class="contact-body">
          <!--------------------------------------- header ----------------------------------------------->
-         <div class="nav_section">
-          <div class="nav-title open_icon"> <img class="nav_iconimg" src="assets/images/brand-logo.png"></div>
-          <div class="nav_right">
-            <span style="font-size:30px;cursor:pointer" class="open_icon" onclick="openNav()">&#9776;</span>
-            <i class="fa fa-shopping-cart cart_icon open_icon" aria-hidden="true"></i>
+         <div class="container-fluid gradient">
+          <div class="container">
+            <div class="nav_section">
+              <div class="nav-title open_icon"> <img class="nav_iconimg" src="assets/images/brand-logo.png"></div>
+              <div class="nav_right">
+                <span style="font-size:30px;cursor:pointer" class="open_icon" onclick="openNav()">&#9776;</span>
+                <i class="fa fa-shopping-cart cart_icon open_icon" aria-hidden="true"></i>
+              </div>
+            </div>
           </div>
         </div>
         <div id="myNav" class="overlay">
-
+  
           <div class="nav_section_close">
             <div class="nav-title close_icon"> <img class="nav_iconimg" src="assets/images/brand-logo.png"></div>
             <div class="nav_right">
@@ -43,27 +47,33 @@
             <a href="./signup.html">Sign Up</a>
             <a href="./signin.html"><button class="navbar-btn" type="submit" value="Submit"><i class="fa fa-caret-right"
                   aria-hidden="true"></i>Sign In</button></a>
-            <a href="#"><button class="navbar-btn navbar-close" type="submit" value="Submit"><i class="fa fa-power-off" aria-hidden="true"></i>LogOut</button></a>
+            <a href="#"><button class="navbar-btn navbar-close" type="submit" value="Submit"><i class="fa fa-power-off"
+                  aria-hidden="true"></i>LogOut</button></a>
           </div>
         </div>
    
      <!--------------------------------------- header close ----------------------------------------->
          <!--  -->
-         <div class="contact-banner">
-             <div>
-                 <h1 class="contact-heading">SIGN UP</h1>
-             </div>
+         <div class="container-fluid bg-grey">
+           <div class="container">
+            <div class="contact-banner">
+              <div>
+                  <h1 class="contact-heading">SIGN UP</h1>
+              </div>
+          </div>
+           </div>
          </div>
+         
 
          <div class="signin-main">
             <div class="signup-form">
             <div>
                 <form class="form-inner signform-inner">
-                    <input type="text" id="email" name="email" placeholder="Email">
-                    <input type="text" id="name" name="name" placeholder="Password">
+                    <input type="text" id="email" name="email" placeholder="Email" class="vinput">
+                    <input type="text" id="name" name="name" placeholder="Password" class="vinput">
                     <div class="signin-btndiv">
-                        <button class="signup-cancelbtn" type="submit" value="Submit">Cancel</button>
-                        <button class="signup-createbtn" type="submit" value="Submit">Create Account</button>
+                        <!-- <button class="signup-cancelbtn" type="submit" value="Submit">Cancel</button> -->
+                        <button class="home_btn btn-primary full-width" type="submit" value="Submit">Create Account</button>
                     </div>
                     <div class="signup-checkboxdiv">
                         <input type="checkbox" id="signup-condition"  value="true">
